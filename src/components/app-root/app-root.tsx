@@ -10,8 +10,9 @@ export class AppRoot {
     return (
       <ion-app>
         <ion-router useHash={false}>
-          <ion-route url="/" component="app-home" />
-          <ion-route url="/profile/:name" component="app-profile" />
+          <ion-route url="/" component="app-login" />
+          <ion-route url="/auth/" component="app-login" />
+          <ion-route url="/auth/register" component="app-lregister" />
         </ion-router>
         <ion-nav />
       </ion-app>

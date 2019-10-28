@@ -10,6 +10,8 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface AppHome {}
+  interface AppLogin {}
+  interface AppLregister {}
   interface AppProfile {
     'name': string;
   }
@@ -25,6 +27,18 @@ declare global {
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppLoginElement extends Components.AppLogin, HTMLStencilElement {}
+  var HTMLAppLoginElement: {
+    prototype: HTMLAppLoginElement;
+    new (): HTMLAppLoginElement;
+  };
+
+  interface HTMLAppLregisterElement extends Components.AppLregister, HTMLStencilElement {}
+  var HTMLAppLregisterElement: {
+    prototype: HTMLAppLregisterElement;
+    new (): HTMLAppLregisterElement;
   };
 
   interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
@@ -52,6 +66,8 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement;
+    'app-login': HTMLAppLoginElement;
+    'app-lregister': HTMLAppLregisterElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
     'doc-dashboard': HTMLDocDashboardElement;
@@ -61,6 +77,8 @@ declare global {
 
 declare namespace LocalJSX {
   interface AppHome {}
+  interface AppLogin {}
+  interface AppLregister {}
   interface AppProfile {
     'name'?: string;
   }
@@ -70,6 +88,8 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'app-home': AppHome;
+    'app-login': AppLogin;
+    'app-lregister': AppLregister;
     'app-profile': AppProfile;
     'app-root': AppRoot;
     'doc-dashboard': DocDashboard;
@@ -84,6 +104,8 @@ declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
+      'app-login': LocalJSX.AppLogin & JSXBase.HTMLAttributes<HTMLAppLoginElement>;
+      'app-lregister': LocalJSX.AppLregister & JSXBase.HTMLAttributes<HTMLAppLregisterElement>;
       'app-profile': LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
       'doc-dashboard': LocalJSX.DocDashboard & JSXBase.HTMLAttributes<HTMLDocDashboardElement>;
