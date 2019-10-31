@@ -4,11 +4,12 @@
   margin: 0 auto;
   width: 80%;
 }
-
-
+.auth-img{
+  margin: 10% 40%;
+}
 .auth-form{
   padding: 40px;
-  margin-top: 40%;
+  margin-top: 20%;
   margin-left: 10%;
   width: 80%;
 }
@@ -24,7 +25,10 @@ h1{
   margin: 0 25%;
 }
 .input-item{
+  border-radius: 50px !important;
   margin-bottom: 10% !important;
 }
 
-
+ion-button{
+  --background:#95D7AE;
+}
