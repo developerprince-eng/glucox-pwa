@@ -8,7 +8,7 @@ export class AppRoot {
 
   render() {
     return (
-      <ion-app>
+      <ion-app class="bg">
         <ion-router useHash={false}>
           <ion-route url="/" component="app-login" />
           <ion-route url="/auth/" component="app-login" />

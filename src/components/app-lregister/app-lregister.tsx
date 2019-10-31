@@ -9,21 +9,22 @@ export class AppLregister {
 
   render() {
     return (
-      <ion-card class="auth-form">
-      <ion-item>
+      <div class="auth-form">
+      <h1>MyGluco</h1>
+      <ion-item class="input-item">
         <ion-label position="floating">Email: </ion-label>
         <ion-input placeholder="johndlamini@email.co.zw"></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item class="input-item">
         <ion-label position="floating">Password: </ion-label>
         <ion-input placeholder="*************" type="password"></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item class="input-item">
         <ion-label position="floating">Repeat Password: </ion-label>
         <ion-input placeholder="*************" type="password"></ion-input>
       </ion-item>
-      <ion-button size="small" class="auth-btn btn" shape="round" expand="full">Register</ion-button>
-    </ion-card>
+      <ion-button size="small" class="auth-btn" shape="round" expand="full">Register</ion-button>
+    </div>
     );
   }
 }

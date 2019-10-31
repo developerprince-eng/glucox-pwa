@@ -1,19 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
 .auth-btn{
+  margin-top: 10% !important;
   margin: 0 auto;
+  width: 80%;
 }
 
-.btn{
-  color: #95D7AE !important;
-}
+
 .auth-form{
-  margin: 50% auto;
+  padding: 40px;
+  margin-top: 40%;
+  margin-left: 10%;
   width: 80%;
 }
 a{
   text-decoration-line: none;
-  color: black;
-  margin: 0 auto;
-  text-decoration-color: black;
+  color: black !important;
+  text-decoration-color: black !important;
+  margin: 0 25%;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10%;
+  margin: 0 25%;
+}
+.input-item{
+  margin-bottom: 10% !important;
 }
 
 
